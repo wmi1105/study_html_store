@@ -1,0 +1,64 @@
+.sideBox{
+  width: 10%;
+  padding-bottom: 5%;
+  border: 1px solid #cdcdcd;
+  float: left;
+  margin-left: 7%;
+}
+.sideBox li{
+  list-style-type: none;
+  padding: 10px 0;
+  text-align: left;
+  font-size: 17px;
+}
+.sideBox a{
+  color: black;
+}
+.sideBox label{
+  font-size: 30px;
+  color: #ffffff;
+  padding: 15% 20%;
+  margin:0;
+}
+.sideBox li li{
+  padding: 5px 0;
+  width: 65px;
+  margin: 0;
+  background-color: rgba(#fefefe, 0.82);
+}
+.sideBox ul ul{
+  display: none;
+  width: 5%;
+  margin-left: 90px;
+  margin-top: -30px;
+  position: absolute;
+  border:1px solid;
+  padding:10px 10px;
+}
+.sideBox ul li:hover ul{
+  display: block;
+}
+.manuImg{
+  padding:10px;
+  margin-bottom: 5%;
+  overflow: hidden;
+  height: auto;
+  margin:0 auto;
+  width: 65%;
+  float: left;
+}
+.manuImg ul{
+  overflow: hidden;
+  height: auto;
+  margin-left:0;
+  margin-bottom: 5%;
+}
+.manuImg a{
+  float: left;
+  color: black;
+  text-align: center;
+  margin-right: 2.5%;
+}
+.manuImg img{
+  border: 1px solid #c8b264;
+}

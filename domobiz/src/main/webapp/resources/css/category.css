@@ -1,0 +1,113 @@
+.sideBox{
+  width: 10%;
+  padding-bottom: 5%;
+  border: 1px solid #cdcdcd;
+  float: left;
+  margin-left: 7%;
+}
+.sideBox li{
+  list-style-type: none;
+  padding: 10px 0;
+  text-align: left;
+  font-size: 17px;
+}
+.sideBox a{
+  color: black;
+}
+.sideBox label{
+  font-size: 30px;
+  color: #ffffff;
+  padding: 15% 20%;
+  margin:0;
+}
+.sideBox li li{
+  padding: 5px 0;
+  width: 65px;
+  margin: 0;
+  background-color: rgba(#fefefe, 0.82);
+}
+.sideBox ul ul{
+  display: none;
+  width: 5%;
+  margin-left: 90px;
+  margin-top: -30px;
+  position: absolute;
+  border:1px solid;
+  padding:10px 10px;
+}
+.sideBox ul li:hover ul{
+  display: block;
+}
+.newBox{
+  width: 65%;
+  float:left;
+  padding:10px;
+  margin-bottom: 5%;
+}
+.newBox ul{
+  overflow: hidden;
+  height: auto;
+  margin: 0;
+}
+.newBox li{
+  margin:10px 0 10px 10px;
+  list-style-type: none;
+  float:left;
+}
+.newBox div img{
+  margin-right: 5%;
+  float:left;
+}
+.manuImg{
+  overflow: hidden;
+  height: auto;
+  margin:3% auto;
+  width: 65%;
+}
+.manuImg ul{
+  overflow: hidden;
+  height: auto;
+  margin-bottom: 5%;
+}
+.manuImg a{
+  float: left;
+  color: black;
+  text-align: center;
+  margin-left: 1%;
+}
+.manuImg img{
+  border: 1px solid #c8b264;
+}
+/*.ButtonTop{
+  width: 5%;
+  float:right;
+  margin-right: 5%;
+  position: fixed;
+  border:1px solid;
+}
+.ButtonTop ul{
+  float: right;
+
+}
+.ButtonTop img{
+  width: 25px;
+  height: 20px;
+  float: left;
+}*/
+.ButtonTop{
+  width: 5%;
+  float:right;
+  margin-right: 5%;
+}
+.ButtonTop ul{
+  width: 5%;
+  padding-top: 5px;
+  float: right;
+  position: fixed;
+  border:2px solid #dbd9b1;
+}
+.ButtonTop img{
+  width: 25px;
+  height: 20px;
+  float: left;
+}

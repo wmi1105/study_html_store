@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+@import url(https://fonts.googleapis.com/css?family=arvo);
+*{
+  font-family: 'hanna';
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover{
+  color: #ffffff;
+  text-decoration: none;
+}
+.hdTop{
+  height: 30px;
+  background-color: #f2f2f2;
+}
+nav div{
+  overflow: hidden;
+  height: auto;
+  width: 15%;
+  margin: 5% auto 4%;
+  padding: 1% 0;
+  border-top: 1.2px solid;
+  border-bottom: 1.2px solid;
+}
+nav span{
+  background-color: #FFFFFF;
+  border:0;
+  font-size: 30px;
+  margin: 0;
+}
+.centerBox{
+  overflow: hidden;
+  height: auto;
+  width: 65%;
+  margin:auto;
+  padding: 15px 0;
+  border-top: 2px solid;
+  border-bottom: 1px solid;
+}
+.loginBox{
+  width: 47%;
+  border-right: 1px solid #cccccc;
+  float:left;
+  margin-left: 3%;
+}
+.loginBox ul{
+  overflow: hidden;
+  height: auto;
+  float:left;
+  margin:10% 0;
+}
+.loginBox li{
+  list-style-type: none;
+}
+.loginBox label{
+  float: left;
+  text-align: left;
+  width: 25%;
+  margin:8px 0 0;
+}
+.loginBox a{
+  background-color: black;
+  color: white;
+  padding: 35px 20px;
+  position: absolute;
+}
+.joinBox{
+  width: 40%;
+  float:left;
+  margin: 45px 0 auto 5%;
+}
+.joinBox label{
+  float: left;
+  text-align: left;
+  width: 50%;
+  color: #7a7676;
+  font-size: 15px;
+}
+.joinBox a{
+  color: #000000;
+  border: 1px solid #858585;
+  padding: 5px 5%;
+}

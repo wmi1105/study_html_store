@@ -1,0 +1,62 @@
+
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+.mainImg{
+  overflow: hidden;
+  height: auto;
+  margin:0 auto;
+  width: 65%;
+  margin-bottom: 8%;
+}
+.mainImg ul{
+    overflow: hidden;
+    height: auto;
+    margin-top: 2%;
+}
+.mainImg li{
+  list-style-type: none;
+  float: left;
+}
+.mainImg div ul{
+  overflow: hidden;
+  height: auto;
+  margin-left: 0;
+  margin-bottom: 2%;
+}
+.popular{
+  overflow: hidden;
+  height: auto;
+  width: 15%;
+  margin: 6% auto 2%;
+  padding: 1% 0;
+  border-top: 1.2px solid;
+  border-bottom: 1.2px solid;
+  text-align: center;
+}
+.popular span{
+  background-color: #FFFFFF;
+  border:0;
+  font-size: 30px;
+  margin: 0;
+}
+
+.manuImg{
+  overflow: hidden;
+  height: auto;
+  margin:0 auto;
+  width: 65%;
+}
+.manuImg ul{
+  overflow: hidden;
+  height: auto;
+  margin-bottom: 5%;
+}
+.manuImg a{
+  float: left;
+  color: black;
+  text-align: center;
+  margin-left: 1%;
+}
+.manuImg img{
+  border: 1px solid #c8b264;
+}

@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+*{
+  font-family: 'hanna';
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover{
+  text-decoration: underline;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.hdTop{
+  height: 30px;
+  background-color: #f2f2f2;
+}
+.hdTop ul{
+  list-style-type: none;
+  height: 30px;
+}
+.hdTop a{
+  font-size: 15px;
+  float: left;
+  padding: 3px 10px;
+  color: #000000;
+}
+nav div{
+  width: 65%;
+  margin:0 auto;
+  border-top: 2px solid;
+  border-bottom: 1px solid;
+}
+nav ul{
+  overflow: hidden;
+  height: auto;
+}
+nav li{
+  overflow: hidden;
+  height: auto;
+  list-style-type: none;
+  font-size: 15px;
+  float: left;
+  padding:5px 3%;
+  margin-top: 10px;
+  border-right: 1px solid;
+}
+nav a{
+  padding:10px;
+  color: #000000;
+}
+section{
+  overflow: hidden;
+  height: auto;
+}
+
+footer div{
+  overflow: hidden;
+  height: auto;
+  border-top: 2px solid #bebebe;
+}
+footer ul{
+  float: left;
+  padding: 0 5%;
+}
+footer li{
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+footer a{
+  color:#000000;
+}

@@ -35,5 +35,29 @@ public class HomeController {
 		
 		return "home";
 	}
+
+	@RequestMapping("/index")
+	public void index(){
+		
+	}
 	
+	@RequestMapping(value="/join", method=RequestMethod.GET)
+	public void join(){
+		
+	}
+	
+	@RequestMapping(value="/login", method=RequestMethod.GET)
+	public void login(){
+		
+	}
+	
+	@RequestMapping(value="/accessory", method=RequestMethod.GET)
+	public void accessory(){
+		
+	}
+	
+	@RequestMapping(value="/itemList", method=RequestMethod.GET)
+	public void itemList(){
+		
+	}
 }
