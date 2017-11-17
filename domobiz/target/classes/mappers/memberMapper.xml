@@ -10,4 +10,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		name, email, phoneNum)
 		values(#{id}, #{password}, #{name}, #{email}, #{phoneNum})
 	</insert>
+	<select id="login" resultType="org.ellen.domain.MemberVO">
+		select id, password,
+		name, email, phoneNum from tbl_member where id=#{id} and password=#{password}
+	</select>
+	
+	<update id="keepLogin">
+	update tbl_member set sessionKey = #{sessionId}, sessionLimit=#{next} where id=#{id}
+	</update>
+	
+	<select id="checkUserWithSessionKey" resultType="org.ellen.domain.MemberVO">
+	select * from tbl_member where sessionkey = #{value} and sessionlimit > now()
+	</select>
 </mapper>	

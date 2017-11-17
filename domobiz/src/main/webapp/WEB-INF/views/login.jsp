@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="resources/css/bootstrap.min.css" media="screen">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>DOMObiz(배원미)</title>
+<script type="text/javascript">
+function login() {
+	var form = document.loginForm;
+
+	form.action = "/loginPost";
+	form.method = "post";
+	form.submit();
+}
+</script>
 </head>
 <body>
   <header>
@@ -30,21 +39,23 @@
 
     <section>
       <div class="centerBox">
-        <div class="loginBox">
-          <ul style="width:70%">
-            <li style="margin-bottom:20px;">
-              <label>아이디</label>
-              <input type="text" name="id" value="" style="margin:0;">
-            </li>
-            <li>
-              <label>비밀번호</label>
-              <input type="text" name="pw" value="">
-            </li>
-          </ul>
-          <ul>
-            <a href="">LOGIN</a>
-          </ul>
-        </div>
+	      <form action="/loginPost" method="post" id="loginForm" name="loginForm" onsubmit="return false;">
+	        <div class="loginBox">
+	          <ul style="width:70%">
+	            <li style="margin-bottom:20px;">
+	              <label>아이디</label>
+	              <input type="text" name="id" id="id" value="" style="margin:0;">
+	            </li>
+	            <li>
+	              <label>비밀번호</label>
+	              <input type="password" name="password" id="password" value="">
+	            </li>
+	          </ul>
+	          <ul>
+	            <a href="javascript:login();">LOGIN</a>
+	          </ul>
+	        </div>
+        </form>
         <div class="joinBox">
           <ul style="margin-bottom:30px;">
             <label>아직 회원이 아니신가요?</label>

@@ -24,5 +24,23 @@
 	<context:component-scan base-package="org.ellen.controller" />
 	
 	
+	<!-- <beans:bean id="authInterceptor" class="org.ellen.interceptor.AuthInterceptor"></beans:bean>-->
+	<beans:bean id="loginInterceptor" class="org.ellen.interceptor.LoginInterceptor"></beans:bean>
+
+
+
+	<interceptors>
+		<interceptor>
+			<mapping path="/loginPost" />
+			<beans:ref bean="loginInterceptor" />
+		</interceptor>
+		<!--
+		<interceptor>
+			<mapping path="/sboard/register" />		로그인하지 않은 사용자가 '/sboard/register'에 접근하면 로그인 화면으로 이동
+			<mapping path="/sboard/modifyPage" />
+			<mapping path="/sboard/removePage" />
+			<beans:ref bean="authInterceptor" />
+		</interceptor>-->
+	</interceptors> 
 	
 </beans:beans>

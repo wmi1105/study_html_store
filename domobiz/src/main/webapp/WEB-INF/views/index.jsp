@@ -1,3 +1,4 @@
+<%@page import="org.ellen.domain.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -13,14 +14,18 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
 
-
-
     <header>
       <div class="hdTop">
         <ul>
             <li>
-            <a href="/login">로그인</a>
-            <a href="/join">회원가입</a>
+            <%MemberVO vo = (MemberVO)session.getAttribute("login");
+            if(vo == null){%>
+	            <a href="/login">로그인</a>
+	            <a href="/join">회원가입</a>
+	            <%}else{ %>
+	            <a><%=vo.getName() %>님</a>
+	            <a href="/logout">로그아웃</a>
+	            <%} %>
             <a href="#">마이페이지</a>
             <a href="#">장바구니</a>
             <a href="#">주문정보</a>
@@ -28,7 +33,7 @@
         </ul>
       </div>
       <div class="text-center">
-        <a href="./index.html">
+        <a href="/index">
           <img src="resources/img/domobiz.png" alt="name" style="width: 300px;">
         </a>
       </div>
