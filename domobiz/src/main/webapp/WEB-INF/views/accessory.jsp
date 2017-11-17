@@ -1,3 +1,4 @@
+<%@page import="org.ellen.domain.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -17,8 +18,14 @@
       <div class="hdTop">
         <ul>
             <li>
-            <a href="/login">로그인</a>
-            <a href="/join">회원가입</a>
+           <%MemberVO vo = (MemberVO)session.getAttribute("login");
+            if(vo == null){%>
+	            <a href="/login">로그인</a>
+	            <a href="/join">회원가입</a>
+	            <%}else{ %>
+	            <a><%=vo.getName() %>님</a>
+	            <a href="/logout">로그아웃</a>
+	            <%} %>
             <a href="#">마이페이지</a>
             <a href="#">장바구니</a>
             <a href="#">주문정보</a>
@@ -100,16 +107,16 @@
         <ul style="border-bottom:1px solid; font-size:25px; padding:20px;">NEW
         </ul>
         <ul style="background-color:#e2e3b8;">
-         <li><img src="resources/img/2중초커.png"></li>
+         <li><img src="resources/img/necklace7.png"></li>
          <li style="width:50%;">
            <div>
              <ul style="margin-bottom: 10px;">
-               <img src="resources/img/시계4.jpg">
-               <img src="resources/img/팔찌17.jpg" style="margin:0;">
+               <img src="resources/img/watch4.jpg">
+               <img src="resources/img/bracelet17.jpg" style="margin:0;">
              </ul>
              <ul>
-               <img src="resources/img/반지5.jpg">
-               <img src="resources/img/목걸이1.jpg" style="margin:0;">
+               <img src="resources/img/ring5.jpg">
+               <img src="resources/img/necklace1.jpg" style="margin:0;">
              </ul>
            </div>
          </li>
@@ -124,23 +131,23 @@
 
       <div class="manuImg">
        <ul>
-         <a href="#" style="margin:0;"><img src="./img/목걸이3.jpg">
+         <a href="#" style="margin:0;"><img src="resources/img/necklace3.jpg">
            <label>menu1</label></a>
-         <a href="#"><img src="resources/img/시계2.jpg">
+         <a href="#"><img src="resources/img/watch2.jpg">
            <label>menu2</label></a>
-         <a href="#"><img src="resources/img/고리2.jpg">
+         <a href="#"><img src="resources/img/deck2.jpg">
            <label>menu3</label></a>
-         <a href="#"><img src="resources/img/반지6.jpg">
+         <a href="#"><img src="resources/img/ring6.jpg">
            <label>menu4</label></a>
        </ul>
        <ul>
-         <a href="#" style="margin:0;"><img src="./img/가죽팔찌1.jpg">
+         <a href="#" style="margin:0;"><img src="resources/img/bracelet21.jpg">
              <label>menu1</label></a>
-         <a href="#"><img src="resources/img/시계3.jpg">
+         <a href="#"><img src="resources/img/watch3.jpg">
              <label>menu2</label></a>
-         <a href="#"><img src=resources./img/목걸이2.jpg">
+         <a href="#"><img src="resources/img/necklace2.jpg">
              <label>menu3</label></a>
-         <a href="#"><img src="resources/img/고리4.jpg">
+         <a href="#"><img src="resources/img/deck4.jpg">
              <label>menu4</label></a>
        </ul>
       </div>

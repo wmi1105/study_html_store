@@ -71,22 +71,22 @@
       <!-- 추천이미지 -->
       <div class="mainImg">
         <ul>
-          <li style="margin:0 1.5% 2% 0; "><img src="resources/img/팔찌9.jpg"></li>
+          <li style="margin:0 1.5% 2% 0; "><img src="resources/img/bracelet9.jpg"></li>
           <li>
             <div class="maingImg2">
-              <ul style="margin-top:0;"><img src="resources/img/반지3.jpg"></ul>
+              <ul style="margin-top:0;"><img src="resources/img/ring3.jpg"></ul>
               <ul>
-                <li><img src="resources/img/고리3.jpg"></li>
-                <li><img src="resources/img/재료_팬던트.jpg" style="margin-left:5%;"></li>
+                <li><img src="resources/img/deck3.jpg"></li>
+                <li><img src="resources/img/material4.jpg" style="margin-left:5%;"></li>
               </ul>
             </div>
           </li>
         </ul>
         <ul>
-          <img src="resources/img/가죽팔찌1.jpg" alt="" style="margin-right:1%;">
-          <img src="resources/img/고리1.jpg" alt="" style="margin-right:1%;">
-          <img src="resources/img/팔찌16.jpg" alt="" style="margin-right:1%;">
-          <img src="resources/img/인형1.jpg" alt="">
+          <img src="resources/img/bracelet23.jpg" alt="" style="margin-right:1%;">
+          <img src="resources/img/ring1.jpg" alt="" style="margin-right:1%;">
+          <img src="resources/img/bracelet16.jpg" alt="" style="margin-right:1%;">
+          <img src="resources/img/doll1.jpg" alt="">
         </ul>
       </div>
 
@@ -106,23 +106,23 @@
 
       <div class="manuImg">
         <ul>
-          <a href="#" style="margin:0;"><img src="resources/img/목걸이3.jpg">
+          <a href="#" style="margin:0;"><img src="resources/img/necklace3.jpg">
             <label>menu1</label></a>
-          <a href="#"><img src="resources/img/시계2.jpg">
+          <a href="#"><img src="resources/img/watch2.jpg">
             <label>menu2</label></a>
-          <a href="#"><img src="resources/img/고리2.jpg">
+          <a href="#"><img src="resources/img/deck2.jpg">
             <label>menu3</label></a>
-          <a href="#"><img src="resources/img/반지6.jpg">
+          <a href="#"><img src="resources/img/ring6.jpg">
             <label>menu4</label></a>
         </ul>
         <ul>
-          <a href="#" style="margin:0;"><img src="resources/img/가죽팔찌1.jpg">
+          <a href="#" style="margin:0;"><img src="resources/img/bracelet23.jpg">
               <label>menu1</label></a>
-          <a href="#"><img src="resources/img/시계3.jpg">
+          <a href="#"><img src="resources/img/watch3.jpg">
               <label>menu2</label></a>
-          <a href="#"><img src="resources/img/목걸이2.jpg">
+          <a href="#"><img src="resources/img/necklace2.jpg">
               <label>menu3</label></a>
-          <a href="#"><img src="resources/img/고리4.jpg">
+          <a href="#"><img src="resources/img/deck4.jpg">
               <label>menu4</label></a>
         </ul>
       </div>
