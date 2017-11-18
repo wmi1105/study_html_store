@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
-<%@include file="../include/index.jsp"%>
+<%@include file="../include/header.jsp"%>
 
 
 <style>
@@ -11,29 +11,29 @@
   border: 1px dotted gray;
   background-color: lightslategrey;
   margin: auto;
-  
 }
 </style>
 
 
 <!-- Main content -->
 <section class="content">
-	<div class="row">
+	<div class="row" style="margin:50px 0 100px;">
 		<!-- left column -->
 		<div class="col-md-12">
+		<center>
 			<!-- general form elements -->
-			<div class="box box-primary">
+			<div class="box box-primary" style="width: 50%; text-align: left; ">
 				<div class="box-header">
 					<h3 class="box-title">MODIFY BOARD</h3>
 				</div>
 				<!-- /.box-header -->
 
-<form role="form" action="modifyPage" method="post">
-
-	<input type='hidden' name='page' value="${cri.page}"> 
-	<input type='hidden' name='perPageNum' value="${cri.perPageNum}">
-	<input type='hidden' name='searchType' value="${cri.searchType}">
-	<input type='hidden' name='keyword' value="${cri.keyword}">
+				<form role="form" action="modifyPage" method="post">
+				
+					<input type='hidden' name='page' value="${cri.page}"> 
+					<input type='hidden' name='perPageNum' value="${cri.perPageNum}">
+					<input type='hidden' name='searchType' value="${cri.searchType}">
+					<input type='hidden' name='keyword' value="${cri.keyword}">
 
 					<div class="box-body">
 
@@ -65,20 +65,31 @@
 					</div>
 					<!-- /.box-body -->
 
-	<div class="box-footer">
-		<div>
-			<hr>
+					<div class="box-footer">
+						<div>
+							<hr>
+						</div>
+				
+						<ul class="mailbox-attachments clearfix uploadedList">
+						</ul>
+				
+				    <button type="submit" class="btn btn-primary">SAVE</button> 
+				    <button type="submit" class="btn btn-warning">CANCEL</button>
+				
+					</div>
+				</form>
+
+			</div>
+			<!-- /.box -->
 		</div>
-
-		<ul class="mailbox-attachments clearfix uploadedList">
-		</ul>
-
-    <button type="submit" class="btn btn-primary">SAVE</button> 
-    <button type="submit" class="btn btn-warning">CANCEL</button>
-
+		<!--/.col (left) -->
+</center>
 	</div>
-</form>
-
+	<!-- /.row -->
+</section>
+<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
 <script type="text/javascript" src="/resources/js/upload.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
 
@@ -225,23 +236,7 @@ $("#popup_img").on("click", function(){
 	$(".popup").hide('slow');
 	
 });	
-
-
 </script>
 
 
-
-
-
-			</div>
-			<!-- /.box -->
-		</div>
-		<!--/.col (left) -->
-
-	</div>
-	<!-- /.row -->
-</section>
-<!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
 <%@include file="../include/footer.jsp"%>
