@@ -133,7 +133,7 @@
     <footer>
       <div class="text-center">
         <ul style="margin-top:30px; margin-left:7%;  border-right:1px solid #d0d0d0;">
-          <li><a href="#">고객상담</a></li>
+          <li><a href="/sboard/list">고객상담</a></li>
           <li><a href="#">이용안내</a></li>
           <li><a href="#">배송안내</a></li>
           <li><a href="#">이용약관</a></li>
